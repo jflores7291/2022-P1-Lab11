@@ -34,22 +34,20 @@ public class Lab11avst {
         System.out.println("\n\nPRIMES BETWEEN 1 AND " + primes.length);
         System.out.println();
 
-        for (int k = 2; k < primes.length; k++) {
-            if (primes[k] == true) {
-                System.out.println(k + " ");
-                }
-            for (int i = 2, j = 1; i < primes.length; i++) {
-                if (primes[i] == true) {
-                    System.out.print(i + " ");
-                    if (j % 15 == 0) {
+
+            int counter = 0;
+            for ( int k = 2; k < primes.length; k++) {
+                if (primes[k] == true) {
+                    System.out.print(k + " ");
+                    counter++;
+                    if (counter % 15 == 0) {
                         System.out.println();
                     }
-                    j++;
                 }
-            }
             }
         }
     }
+
 
 
 
